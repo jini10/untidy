@@ -1,0 +1,18 @@
+h2{
+  font-weight: 500;
+  font-size: 20px;
+  color: #111;
+  text-align: center;
+  margin-top: 159px;
+  margin-bottom: 100px;
+}
+
+.collection-wrap a img{
+  display: block;
+}
+.collection-wrap{
+  display: grid;
+  grid-template-columns:repeat(3, 5fr);
+  gap: 8px;
+  margin-bottom: 62px;
+}

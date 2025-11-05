@@ -1,0 +1,92 @@
+
+header{
+  top: 0;
+  z-index: 100;
+}
+
+/*쿠폰*/
+.header-coupon{
+  width: 100%;
+  height: 40px;
+  background-color: #FFBEA7;
+}
+
+.header-coupon p{
+  text-align: center;
+  color: #111;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.header-coupon p:hover{
+  color: #fff;
+}
+
+/*로고*/
+.header-logo{
+  margin: auto;
+  width: 1280px;
+  padding: 0 45px;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+} 
+
+/*메뉴*/
+#menu{
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 52px;
+}
+#menu li a{
+  color: #333;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+#menu li a:hover{
+  color: #FFBEA7;
+}
+
+
+/*logo*/
+#logo{
+position: absolute;
+top: 42px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+/*icon*/
+#icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 52px;
+}
+#icon li a svg path{
+  cursor: pointer;
+  transition: stroke 0.3s ease;
+}
+#icon li a:hover svg path{
+stroke: #FFBEA7;
+}
+
+/*헤더 전체높이 맞추기*/
+.top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

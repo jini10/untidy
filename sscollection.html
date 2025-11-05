@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>untidy</title>
+
+  <!--외부정의 css-->
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/collection.css" rel="stylesheet">
+  <link href="css/sscollection.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+
+  <!--폰트어썸-->
+  <script src="https://kit.fontawesome.com/79986fe443.js" crossorigin="anonymous"></script>
+  <!--jquery 라이브러리-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <div class="top_wrap">
+      <div class="container">
+        <div class="header-coupon">
+          <a href="#">
+            <p>JOIN MEMBERSHIP 5% SALE COUPON</p>
+          </a>
+        </div>
+        <div class="header-logo">
+          <div class="top">
+
+            <ul id="menu">
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">COLLECTION</a></li>
+              <li><a href="#">INFO</a></li>
+              <li><a href="#">ABOUT</a></li>
+            </ul>
+
+            <ul id="logo">
+              <li>
+                <a href="index.html">
+                  <img src="img/logo.svg" alt="logo">
+                </a>
+              </li>
+            </ul>
+
+            <ul id="icon">
+              <!--돋보기-->
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                      stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5 17.5L13.875 13.875" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <!--유저-->
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M16.6666 17.5V15.8333C16.6666 14.9493 16.3154 14.1014 15.6903 13.4763C15.0652 12.8512 14.2173 12.5 13.3333 12.5H6.66659C5.78253 12.5 4.93468 12.8512 4.30956 13.4763C3.68444 14.1014 3.33325 14.9493 3.33325 15.8333V17.5"
+                      stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M10.0001 9.16667C11.841 9.16667 13.3334 7.67428 13.3334 5.83333C13.3334 3.99238 11.841 2.5 10.0001 2.5C8.15913 2.5 6.66675 3.99238 6.66675 5.83333C6.66675 7.67428 8.15913 9.16667 10.0001 9.16667Z"
+                      stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <!--카트-->
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_44_23)">
+                      <path
+                        d="M7.50008 18.3333C7.96032 18.3333 8.33341 17.9602 8.33341 17.5C8.33341 17.0398 7.96032 16.6667 7.50008 16.6667C7.03984 16.6667 6.66675 17.0398 6.66675 17.5C6.66675 17.9602 7.03984 18.3333 7.50008 18.3333Z"
+                        stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6666 18.3333C17.1268 18.3333 17.4999 17.9602 17.4999 17.5C17.4999 17.0398 17.1268 16.6667 16.6666 16.6667C16.2063 16.6667 15.8333 17.0398 15.8333 17.5C15.8333 17.9602 16.2063 18.3333 16.6666 18.3333Z"
+                        stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M0.833252 0.833332H4.16659L6.39992 11.9917C6.47612 12.3753 6.68484 12.72 6.98954 12.9652C7.29424 13.2105 7.6755 13.3408 8.06659 13.3333H16.1666C16.5577 13.3408 16.9389 13.2105 17.2436 12.9652C17.5483 12.72 17.757 12.3753 17.8333 11.9917L19.1666 5H4.99992"
+                        stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_44_23">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <!--언어-->
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_44_27)">
+                      <path
+                        d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 10C18.3334 5.39763 14.6025 1.66667 10.0001 1.66667C5.39771 1.66667 1.66675 5.39763 1.66675 10C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z"
+                        stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M1.66675 10H18.3334" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.0001 1.66667C12.0845 3.94863 13.269 6.91003 13.3334 10C13.269 13.09 12.0845 16.0514 10.0001 18.3333C7.91568 16.0514 6.73112 13.09 6.66675 10C6.73112 6.91003 7.91568 3.94863 10.0001 1.66667Z"
+                        stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_44_27">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--main-->
+  <main>
+    <h2>S/S COLLECTION</h2>
+    <div class="collection-wrap">
+    <a><img src="img/ss1.png" alt="1"></a> 
+    <a><img src="img/ss2.png" alt="2"></a> 
+    <a><img src="img/ss3.png" alt="3"></a> 
+    <a><img src="img/ss4.png" alt="4"></a> 
+    <a><img src="img/ss5.png" alt="5"></a> 
+    <a><img src="img/ss6.png" alt="6"></a> 
+    <a><img src="img/ss7.png" alt="7"></a> 
+    <a><img src="img/ss8.png" alt="8"></a> 
+    <a><img src="img/ss9.png" alt="9"></a> 
+    <a><img src="img/ss10.png" alt="10"></a> 
+    <a><img src="img/ss11.png" alt="11"></a> 
+    <a><img src="img/ss12.png" alt="12"></a> 
+    <a><img src="img/ss13.png" alt="13"></a> 
+    <a><img src="img/ss14.png" alt="14"></a> 
+    <a><img src="img/ss15.png" alt="15"></a> 
+    </div>
+  </main>
+
+  <!--footer-->
+  <footer>
+    <hr>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <h4>Information</h4>
+        <ul>
+          <li>Company: 주식회사 언타이디</li>
+          <li>Ceo: HYUNJI KIM</li>
+          <li>Company Reg.No: 252-81-02724 [사업자정보확인]</li>
+          <li>ⓒ2023-GYEONGGIYANGJU-1695 </li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>11465</li>
+          <li>경기 양주시 화합로1710번길 12 양주옥정 듀클래스 3층 <br>
+            326호,327호,328호</li>
+          <li>070-8691-3803</li>
+          <li>WEEKDAYS AM 11:00~PM 05:00 | OFF SAT - SUN </li>
+          <li>untidy.info@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-follow">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Kakao channel</a> </li>
+        </ul>
+      </div>
+
+      <div class="about">
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Guide</li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

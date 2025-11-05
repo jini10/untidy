@@ -1,0 +1,236 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  background-color: #FFF9F3;
+}
+main{
+  width:1280px;
+  padding:0 45px;
+  margin:auto;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/*banner*/
+.banner{
+  margin-top: 52px;
+  position: relative;
+  width: 100%;
+  max-width: 1186px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slides{
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slides img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0; /*이미지가 줄어들지 않도록*/
+}
+
+.dots{
+position: absolute;
+bottom: 6px;
+right: 6px;
+transform: translateX(-50%);
+display: flex;
+gap: 5px;
+z-index: 10; /*이미지 위에 오도록*/
+}
+
+
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #999999;
+  transition: all 0.3s ease;
+}
+.dot:hover{
+  background: #FFBEA7;
+}
+
+.dot.active{
+    background: #FFBEA7;
+  transform: scale(1.2);
+}
+
+
+/*best seller*/
+.product-list h2{
+  margin-top: 210px;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #141414;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product-list ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);/*4개씩 한 줄*/
+  gap: 16px; /*아이템 간격*/
+  padding: 0;
+} 
+.product-list li{
+  text-align: center;
+}
+.img-wrap{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.img-wrap img{
+  width: 100%;
+  height: auto;
+  transition: opacity 0.4s ease;
+  display: block;
+}
+/*hover시 이미지 전환*/
+.img-wrap .hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.img-wrap:hover .hover{
+opacity: 1;
+}
+.img-wrap:hover .product{
+  opacity: 0;
+}
+
+/*제품명, 가격*/
+.name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #141414;
+  margin-top: 16px;
+}
+.m-price{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #141414;
+  margin-bottom: 24px;
+}
+
+
+/*collection*/
+.collection h2{
+  margin-top: 209px;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #141414;
+  text-align: left;
+}
+.collection{
+  text-align: center;
+}
+
+.collection-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);/*3개 1줄*/
+  gap: 8px;
+  position: relative;
+}
+
+.item{
+  position: relative;
+  overflow: hidden;
+  min-height: 1px;
+}
+.item a{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.item img{
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/*이미지에 반투명배경*/
+.item::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(225, 225, 225,0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+/*각 row hover 시, 해당 row의 모든 item에 불투명 효과 */
+.row:hover .item::before {
+  opacity: 1;
+}
+
+/*오버레이 기본 숨김*/
+.overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+.overlay p{
+  font-weight: 500;
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+.overlay span{
+  font-size: 13px;
+  color: #666666;
+  text-decoration: underline;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.bottom-row{
+  margin-bottom: 62px;
+}
+
+
+/* 가운데 사진만 텍스트 표시 */
+.top-row .item:nth-child(2):hover .overlay,
+.bottom-row .item:nth-child(2):hover .overlay {
+  opacity: 1;
+}

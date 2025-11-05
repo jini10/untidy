@@ -1,0 +1,51 @@
+footer{
+  padding: 0 365px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+hr {
+  width: 1180px;
+}
+
+.footer-inner{
+  width: 1106px;
+  padding: 0 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 75px;
+}
+.footer-inner a:hover{
+text-decoration: underline;
+}
+/*footer전체 글꼴*/
+.footer-inner h4{
+font-size: 16px;
+font-weight: 500;
+color: #141414;
+margin-top: 10px;
+margin-bottom: 37px;
+}
+.footer-inner ul li{
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.about{
+  margin-top: 67px;
+}
+.about li:hover{
+  text-decoration: underline;
+}
+
+.footer-contact ul li:nth-child(2){
+  line-height: 1.7;
+}
+.footer-contact ul li:nth-child(3){
+  padding-bottom: 4px;
+}
