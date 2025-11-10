@@ -1,8 +1,7 @@
 main{
   font-family: 'Noto Sans KR', sans-serif;
 }
-.product-container{
-padding-left:44px;
+.product-container{ 
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 45px;
@@ -335,6 +334,9 @@ gap: 20px;
 padding-left: 44px;
 margin-bottom: 111px;
 }
+.other_color img:hover{
+  opacity: 0.7;
+}
 .black img{
 width: 367px;
 height: 417px;
@@ -349,9 +351,15 @@ margin-bottom: 20px;
   font-size: 18px;
   color: #141414;
 }
+.black p:hover{
+  color: #CA7151;
+}
 .brick p{
   font-size: 18px;
   color: #141414;
+}
+.brick p:hover{
+  color: #CA7151;
 }
 .black .brick p:first-child{
   margin-bottom: 10px;

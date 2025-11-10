@@ -46,18 +46,18 @@ main{
 
 .dots{
 position: absolute;
-bottom: 6px;
+bottom: 18px;
 right: 6px;
 transform: translateX(-50%);
 display: flex;
-gap: 5px;
+gap: 7px;
 z-index: 10; /*이미지 위에 오도록*/
 }
 
 
 .dot{
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   cursor: pointer;
   background: #999999;
